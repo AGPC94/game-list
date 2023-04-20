@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "105121574201",
+    "project_id": "gamelist-500ff",
+    "storage_bucket": "gamelist-500ff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:105121574201:android:4af21fbdd324fbf6318ce8",
+        "android_client_info": {
+          "package_name": "com.example.gamelistpibien"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "105121574201-38rcfqisnbt3fntg62qj3aqqaqouo479.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbw8xcesIXGrpzw2CITw-hB0wUI3lm678"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "105121574201-38rcfqisnbt3fntg62qj3aqqaqouo479.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

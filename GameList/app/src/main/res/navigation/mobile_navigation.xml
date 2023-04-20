@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.gamelistpibien.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.gamelistpibien.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/navigation_gamelist"
+        android:name="com.example.gamelistpibien.ui.gamelist.GameListFragment"
+        android:label="fragment_gamelist"
+        tools:layout="@layout/fragment_gamelist" />
+    <fragment
+        android:id="@+id/navigation_user"
+        android:name="com.example.gamelistpibien.ui.user.UserFragment"
+        android:label="user_fragment"
+        tools:layout="@layout/user_fragment" >
+        <action
+            android:id="@+id/action_navigation_user_to_userSettingsFragment"
+            app:destination="@id/userSettingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.example.gamelistpibien.ui.search.SearchFragment"
+        android:label="search_fragment"
+        tools:layout="@layout/search_fragment" />
+    <fragment
+        android:id="@+id/allGamesFragment"
+        android:name="com.example.gamelistpibien.ui.AllGamesFragment"
+        android:label="fragment_all_games"
+        tools:layout="@layout/fragment_all_games" />
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.example.gamelistpibien.ui.GameFragment"
+        android:label="game_fragment"
+        tools:layout="@layout/game_fragment" />
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.gamelistpibien.ui.register.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" />
+    <fragment
+        android:id="@+id/userSettingsFragment"
+        android:name="com.example.gamelistpibien.ui.usersettings.UserSettingsFragment"
+        android:label="user_settings_fragment"
+        tools:layout="@layout/user_settings_fragment" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.gamelistpibien.ui.login.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+</navigation>
